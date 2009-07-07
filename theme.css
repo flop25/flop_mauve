@@ -210,6 +210,16 @@ A.navThumb, A.navThumb:hover {
 	padding: 0px;
 }
 /* others */
+.thumbnailCategories blockquote UL LI {
+	list-style-position: outside;
+	list-style-type:circle;
+	
+}
+.thumbnailCategories blockquote OL LI {
+	list-style-position: outside;
+	list-style-type: decimal;	
+}
+
 .pleaseNote {
   background: #9c9c9c;
   color: #ffff99;
