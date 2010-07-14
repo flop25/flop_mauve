@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: flop_mauve
-Version: 3.1.0
+Version: 3.1.1
 Description: A mauve theme derived from the dark theme of piwigo
 Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=385
 Author: flop25
