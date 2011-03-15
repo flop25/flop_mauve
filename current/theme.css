@@ -232,7 +232,13 @@ A.navThumb, A.navThumb:hover {
   padding-bottom:30px;
   display:block;
 }
+.pwg-icon {
+	background-image: url(../default/s26/outline_ffffff.png);
+}
 
+A:hover .pwg-icon {
+	background-image: url(../default/s26/outline_ffff80.png);
+}
 /*calendar elements*/
 SPAN.calItemEmpty { color: silver; }
 

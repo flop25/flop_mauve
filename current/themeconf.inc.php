@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: flop_mauve
-Version: 3.1.1
+Version: auto
 Description: A mauve theme derived from the dark theme of piwigo
 Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=385
 Author: flop25
@@ -22,7 +22,7 @@ $themeconf = array(
 
 $conf['level_separator'] = ' &raquo; ';
 $conf['paginate_pages_around'] = 7;
-
-
+$conf['show_picture_name_on_title'] = false;
+$conf['show_thumbnail_caption'] = false;
 
 ?>
