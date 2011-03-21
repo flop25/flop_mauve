@@ -12,13 +12,8 @@ $themeconf = array(
   'parent'        => 'default',
   'icon_dir'      => 'themes/default/icon',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
-  'local_head' => '<!--[if IE]><style>
-#content div.thumbnailCategory span {
-    display: inline-block;
-    height: 100%;
-}
-</style><![endif]-->
-');
+  'local_head'		=> 'local_head.tpl',
+  );
 
 $conf['level_separator'] = ' &raquo; ';
 $conf['paginate_pages_around'] = 7;

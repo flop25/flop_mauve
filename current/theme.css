@@ -1,27 +1,32 @@
-/* $Id: theme.css 1938 2007-04-06 19:55:21Z rvelices $ */
-
 
 
 /*catégories*/
 
 
-#content ul.thumbnailCategories li {
-width:160px;
-height:205px;
-margin: 5px;
-padding: 5px;
+BODY#theCategoryPage .thumbnailCategories {
+	padding-left:auto;
+	padding-right:auto;
+	padding: 5px;
+	list-style: none outside none;
+	text-align: center;
 }
-
-#content div.thumbnailCategory {
+BODY#theCategoryPage .thumbnailCategories li {
+	width: auto;
+	float: none;
+	display:inline;
+	text-align:center;
+	margin-left:10px;
+}
+BODY#theCategoryPage div.thumbnailCategory {
 	text-align:center;
 	width:100%;
 	height:100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	vertical-align:middle;
 }
 
-#content div.thumbnailCategory div.illustration  {
+BODY#theCategoryPage div.thumbnailCategory div.illustration  {
 width:auto;
 	height:auto;
 /*height:135px;*/
@@ -31,7 +36,7 @@ float:none;
 	margin: 0;
 	padding: 0;
 }
-#content div.thumbnailCategory div.description {
+BODY#theCategoryPage div.thumbnailCategory div.description {
 	width:auto;
 	height:auto;
 	text-align:center;
@@ -40,18 +45,18 @@ float:none;
     overflow: auto;
 
 }
-#content div.thumbnailCategory div.description IMG {
+BODY#theCategoryPage div.thumbnailCategory div.description IMG {
 	float:right;
 }
 /* --------------Hack-------------*/
-#content div.thumbnailCategory {
+BODY#theCategoryPage div.thumbnailCategory {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 width:160px;
 height:205px;
 }
-#content div.thumbnailCategory * {
+BODY#theCategoryPage div.thumbnailCategory * {
     vertical-align: middle;
 }
 /*\*//*/
@@ -65,8 +70,10 @@ height:205px;
 }
 /**/
 /* --------------fin Hack-------------*/
-
-#content div.thumbnailCategory div.description h3 {
+BODY#theCategoryPage div.thumbnailCategory div.illustration img {
+    height: 96px;
+}
+BODY#theCategoryPage div.thumbnailCategory div.description h3 {
 text-align:center;
 }
 #la_description {
