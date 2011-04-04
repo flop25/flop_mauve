@@ -1,38 +1,26 @@
-
-
 /*catégories*/
 
 
 BODY#theCategoryPage .thumbnailCategories {
 	padding-left:auto;
 	padding-right:auto;
-	padding: 5px;
 	list-style: none outside none;
 	text-align: center;
 }
 BODY#theCategoryPage .thumbnailCategories li {
 	width: auto;
 	float: none;
-	display:inline;
+	display:inline-block;
 	text-align:center;
 	margin-left:10px;
 }
-BODY#theCategoryPage div.thumbnailCategory {
-	text-align:center;
-	width:100%;
-	height:100%;
-	margin: 0 auto;
-	padding: 0;
-	vertical-align:middle;
-}
-
-BODY#theCategoryPage div.thumbnailCategory div.illustration  {
-width:auto;
+BODY#theCategoryPage div.thumbnailCategory div.illustration {
+	width:auto;
 	height:auto;
-/*height:135px;*/
+	/*height:135px;*/
 text-align:center;
-overflow: inherit;
-float:none;
+	overflow: inherit;
+	float:none;
 	margin: 0;
 	padding: 0;
 }
@@ -41,176 +29,147 @@ BODY#theCategoryPage div.thumbnailCategory div.description {
 	height:auto;
 	text-align:center;
 	overflow:inherit;
-    float:none;
-    overflow: auto;
-
+	float:none;
+	overflow: auto;
 }
 BODY#theCategoryPage div.thumbnailCategory div.description IMG {
 	float:right;
 }
-/* --------------Hack-------------*/
+BODY#theCategoryPage div.thumbnailCategory div.description p {
+	text-align: center;
+}
 BODY#theCategoryPage div.thumbnailCategory {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-width:160px;
-height:205px;
+	display: inline-block;
+	margin: 5px auto;
+	padding:5px;
+	vertical-align: middle;
+	width:160px;
+	height:205px;
+	text-align: center;
+	background-image:none;
 }
 BODY#theCategoryPage div.thumbnailCategory * {
-    vertical-align: middle;
+	vertical-align: middle;
 }
-/*\*//*/
-.wraptocenter {
-    display: block;
-}
-.wraptocenter span {
-    display: inline-block;
-    height: 100%;
-    width: 1px;
-}
-/**/
-/* --------------fin Hack-------------*/
 BODY#theCategoryPage div.thumbnailCategory div.illustration img {
-    height: 96px;
+	height: 96px;
 }
 BODY#theCategoryPage div.thumbnailCategory div.description h3 {
-text-align:center;
+	text-align:center;
 }
 #la_description {
-display:none;
+	display:none;
 }
-
-
 /* text color */
-BODY, H1, H3, DT,
-INPUT.rateButtonSelected /* <= why IE doesn't inherit this ? */ {
-  color:#e0e0e0;
+BODY, H1, H3, DT, INPUT.rateButtonSelected /* <= why IE doesn't inherit this ? */ {
+	color:#e0e0e0;
 }
-
 H2, #menubar DT, .throw {
-  color: #fff48e;
+	color: #fff48e;
 }
-
 #content .navigationBar {
-  color: #aaaaaa;
+	color: #aaaaaa;
 }
 #content .pageNumberSelected {
-  color: #000000;
+	color: #000000;
 }
-
-.tabsheet li,
-.tabsheet li a { color: #fff; }
-.tabsheet li a:hover { color: #fff48e; }
-
+.tabsheet li, .tabsheet li a {
+	color: #fff;
+}
+.tabsheet li a:hover {
+	color: #fff48e;
+}
 /* backgrounds */
 BODY {
-  background-color: #330033;
+	background-color: #330033;
 }
-
 BODY#theCategoryPage #the_page {
 	background-image: url(images/bk_ground.gif);
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
-
 BODY#thePicturePage #theHeader {
 	background-image: url(images/bk_ground.gif);
 }
-
-
-H3, #the_page, #imageHeaderBar, #imageToolBar A:hover, .row1  {
+H3, #the_page, #imageHeaderBar, #imageToolBar A:hover, .row1 {
 	background-image: url(images/bk_ground.gif);
-	}
-
+}
 #menubar DL, #content, #imageToolBar, .header_notes, .content {
-  background-color: #5f5f5f;
+	background-color: #5f5f5f;
 }
-
-H2, #menubar DT, .throw  {
-  background-image: url(images/tableh1_bg.png);
+H2, #menubar DT, .throw {
+	background-image: url(images/tableh1_bg.png);
 }
-
 #imageHeaderBar H2 {
-  background-image: none;
-  background-color: transparent;
-  border: none;
+	background-image: none;
+	background-color: transparent;
+	border: none;
 }
-
 #imageHeaderBar {
-  background-image: url(images/tableh2_bg.png);
-  background-repeat: repeat-x;
-  background-position: center;
+	background-image: url(images/tableh2_bg.png);
+	background-repeat: repeat-x;
+	background-position: center;
 }
-.tabsheet li { background-color: #3f3f3f; }
-
-.selected_tab { background-color: #5f5f5f !important; }
-
+.tabsheet li {
+	background-color: #3f3f3f;
+}
+.selected_tab {
+	background-color: #5f5f5f !important;
+}
 /* borders */
-#menubar DL, #content, .content,
-#comments DIV.comment BLOCKQUOTE {
-  border: 1px solid #000000;
+#menubar DL, #content, .content, #comments DIV.comment BLOCKQUOTE {
+	border: 1px solid #000000;
 }
-
 #imageHeaderBar {
-  border-top: 1px solid #000000;
+	border-top: 1px solid #000000;
 }
 H2, #menubar DT, #imageToolBar {
-  border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
-
 #theImage IMG {
-  border-color: #000000;
+	border-color: #000000;
 }
-
 #content UL.thumbnail IMG {
-  border: 1px solid #a0a0a0;
+	border: 1px solid #a0a0a0;
 }
-
-FIELDSET, INPUT, SELECT, TEXTAREA,
-#content DIV.comment  A.illustration IMG, #infos,
-#content DIV.thumbnailCategory {
-  border: 1px solid gray;
+FIELDSET, INPUT, SELECT, TEXTAREA, #content DIV.comment A.illustration IMG, #infos, #content DIV.thumbnailCategory {
+	border: 1px solid gray;
 }
-
 #comments DIV.comment BLOCKQUOTE {
-  border-left: 2px solid #696969;
+	border-left: 2px solid #696969;
 }
-
 #content UL.thumbnails SPAN.wrap2 {
-  border: 1px solid #aaaaaa;	/* thumbnails border color and style */
-  -moz-border-radius: 10px;	/* round corners with Geko */
-  border-radius: 10px 10px;	/* round corners with CSS3 compliant browsers */
-  background-image: url(images/tn.jpg);
+	border: 1px solid #aaaaaa;	/* thumbnails border color and style */
+	-moz-border-radius: 10px;	/* round corners with Geko */
+	border-radius: 10px 10px;	/* round corners with CSS3 compliant browsers */
+	background-image: url(images/tn.jpg);
 }
-
-#content UL.thumbnails SPAN.wrap2:hover,
-#content UL.thumbnailCategories DIV.thumbnailCategory:hover,
-#content UL.thumbnailCategories DIV.thumbnailCategory:hover A {
-  background-color: #faebd7;
-  border-color: yellow;		/* thumbnails border color when mouse cursor is over it */
-  color: black;
-  -moz-border-radius: 10px;	/* round corners with Geko */
-  border-radius: 10px 10px;	/* round corners with CSS3 compliant browsers */
+#content UL.thumbnails SPAN.wrap2:hover, #content UL.thumbnailCategories DIV.thumbnailCategory:hover, #content UL.thumbnailCategories DIV.thumbnailCategory:hover A {
+	background-color: #faebd7;
+	border-color: yellow;		/* thumbnails border color when mouse cursor is over it */
+	color: black;
+	-moz-border-radius: 10px;	/* round corners with Geko */
+	border-radius: 10px 10px;	/* round corners with CSS3 compliant browsers */
 }
-
-ul.tabsheet { border-color: #fff48e; }
-.tabsheet li { border: 1px solid #fff; }
-.tabsheet li:hover { border-color: #fff48e !important; }
-
+ul.tabsheet {
+	border-color: #fff48e;
+}
+.tabsheet li {
+	border: 1px solid #fff;
+}
+.tabsheet li:hover {
+	border-color: #fff48e !important;
+}
 /* links */
 A, INPUT.rateButton {
-  color: #FFFFFF;
+	color: #FFFFFF;
 }
-
 A:hover {
-  color: #FFF48E;
+	color: #FFF48E;
 }
-
-#imageToolBar A, #imageToolBar A:hover,
-A.navThumb, A.navThumb:hover {
-  border-bottom: none;
+#imageToolBar A, #imageToolBar A:hover, A.navThumb, A.navThumb:hover {
+	border-bottom: none;
 }
-
 #theHeader A {
 	text-decoration: none;
 	margin: 0px;
@@ -220,47 +179,56 @@ A.navThumb, A.navThumb:hover {
 .thumbnailCategories blockquote UL LI {
 	list-style-position: outside;
 	list-style-type:circle;
-	
 }
 .thumbnailCategories blockquote OL LI {
 	list-style-position: outside;
-	list-style-type: decimal;	
+	list-style-type: decimal;
 }
-
 .pleaseNote {
-  background: #9c9c9c;
-  color: #ffff99;
-  padding: 1ex;
-  font-weight: bold;
+	background: #9c9c9c;
+	color: #ffff99;
+	padding: 1ex;
+	font-weight: bold;
 }
 #the_page {
-  border: 1px solid #e0e0e0;
-  padding-top: 5px;
-  padding-bottom:30px;
-  display:block;
+	border: 1px solid #e0e0e0;
+	padding-top: 5px;
+	padding-bottom:30px;
+	display:block;
 }
 .pwg-icon {
 	background-image: url(../default/s26/outline_ffffff.png);
 }
-
 A:hover .pwg-icon {
 	background-image: url(../default/s26/outline_ffff80.png);
 }
 /*calendar elements*/
-SPAN.calItemEmpty { color: silver; }
-
-SPAN.calItem, SPAN.calItemEmpty
-{
-  border: 1px solid gray;
+SPAN.calItemEmpty {
+	color: silver;
 }
-
+SPAN.calItem, SPAN.calItemEmpty {
+	border: 1px solid gray;
+}
 /* nice looking month calendar*/
-TD.calDayCellEmpty, TD.calDayCellFull { border: 1px solid gray;}
-
-TD.calDayCellEmpty { color: silver; }
-
-.calBackDate { color: #000; }
-.calForeDate { color: #fff; }
-.virtual_cat { background: #3f3f3f !important; }
-.qsearch { font-size: 80%; font-style: normal; }
-#mbMenu #quicksearch > p { text-align: left; }
+TD.calDayCellEmpty, TD.calDayCellFull {
+	border: 1px solid gray;
+}
+TD.calDayCellEmpty {
+	color: silver;
+}
+.calBackDate {
+	color: #000;
+}
+.calForeDate {
+	color: #fff;
+}
+.virtual_cat {
+	background: #3f3f3f !important;
+}
+.qsearch {
+	font-size: 80%;
+	font-style: normal;
+}
+#mbMenu #quicksearch > p {
+	text-align: left;
+}
