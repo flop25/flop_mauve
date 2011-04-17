@@ -3,7 +3,7 @@
 Theme Name: flop_mauve
 Version: auto
 Description: A mauve theme derived from the dark theme of piwigo
-Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=385
+Theme URI: http://fr.piwigo.org/ext/extension_view.php?eid=62
 Author: flop25
 Author URI: http://www.planete-flop.fr
 */
