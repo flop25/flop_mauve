@@ -91,7 +91,7 @@ BODY#theCategoryPage #the_page {
 BODY#thePicturePage #theHeader {
 	background-image: url(images/bk_ground.gif);
 }
-H3, #the_page, #imageHeaderBar, #imageToolBar A:hover, .row1 {
+#the_page, #imageHeaderBar, #imageToolBar A:hover, .row1 {
 	background-image: url(images/bk_ground.gif);
 }
 #menubar DL, #content, #imageToolBar, .header_notes, .content {
