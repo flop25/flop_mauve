@@ -30,10 +30,10 @@ function flopmauve_cat($tpl_thumbnails_var)
 function flopmauve_cat_pre($content, &$smarty)
 {
   $search = 'NAME}</a>';
-  $replacement = 'NAME|truncate:38:" [...]"}</a>';
+  $replacement = 'NAME|truncate:38:" [...]"|strip_tags}</a>';
   $content=str_replace($search, $replacement, $content);
   $search = 'DESCRIPTION}</p>';
-  $replacement = 'DESCRIPTION|truncate:130:" [...]"}</p>';
+  $replacement = 'DESCRIPTION|truncate:120:" [...]"|strip_tags}</p>';
   return str_replace($search, $replacement, $content);
 }
 
