@@ -13,6 +13,7 @@ $themeconf = array(
   'icon_dir'      => 'themes/default/icon',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head'		=> 'local_head.tpl',
+  'colorscheme' => 'clear',
   );
 
 $conf['level_separator'] = ' &raquo; ';
